@@ -45,10 +45,10 @@ const routing = function ($stateProvider, $urlRouterProvider, $locationProvider)
     component: 'home',
   };
 
-  const makePlanState = {
-    name: 'app.makePlan',
-    url: '/new/plan',
-    component: 'makePlan',
+  const makeGroupState = {
+    name: 'app.makeGroup',
+    url: '/new/group',
+    component: 'makeGroup',
   };
 
   const planState = {
@@ -225,7 +225,7 @@ const routing = function ($stateProvider, $urlRouterProvider, $locationProvider)
   $stateProvider.state(friendsListState);
 
   // plan states
-  $stateProvider.state(makePlanState);
+  $stateProvider.state(makeGroupState);
   $stateProvider.state(planState);
   $stateProvider.state(feedState);
   $stateProvider.state(plannerState);
